@@ -327,6 +327,9 @@ ol {
   margin-right: 45px;
   position: relative;
 }
+.header__nav__menu ul li a{
+  text-decoration: none;
+}
 .header__nav__menu ul li.active a:after {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
@@ -1373,6 +1376,7 @@ ol {
 }
 
 .blog__item {
+  width: 352px;
   height: 380px;
   border: 1px solid #00bfe7;
   border-radius: 30px;
