@@ -33,6 +33,9 @@ body {
   font-family: "Josefin Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 h1,
 h2,
@@ -2554,7 +2557,7 @@ ol {
   color: #333;
 }
 .accordion{
-  --bs-accordion-bg: #00bfe7;
+  --bs-accordion-bg: #100028;
 }
 .accordion-button{
   color: #fff;
@@ -2614,4 +2617,12 @@ ol {
 }
 .owl-dots{
   display: none;
+}
+.tech_icons{
+  width: 100px;
+}
+.tech_flex{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
