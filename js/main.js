@@ -195,3 +195,8 @@ for(let anchor of anchors){
         })
     })
 }
+$(function() {
+    $('.slicknav_icon').click(function(){
+        $(this).toggleClass('open');
+    });
+});
