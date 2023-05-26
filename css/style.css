@@ -1255,6 +1255,8 @@ ol {
 .portfolio__item img {
   display: block;
   margin: 0 auto;
+  width: 64px;
+  height: 64px;
 }
 
 .portfolio__item__video {
@@ -2006,7 +2008,7 @@ ol {
     display: none;
   }
   .slicknav_menu .slicknav_icon{
-    margin: 0;
+    margin: 5px;
     padding: 0;
   }
   .slicknav_icon {
@@ -2204,7 +2206,7 @@ ol {
     padding: 150px 350px 0;
   }
   .slicknav_menu .slicknav_icon{
-    margin: 0;
+    margin: 5px;
     padding: 0;
   }
   .slicknav_nav .slicknav_row,
@@ -2241,8 +2243,6 @@ ol {
     display: none;
   }
   .slicknav_icon {
-    width: 60px;
-    height: 45px;
     position: relative;
     margin: 30px auto;
     transform: rotate(0deg);
