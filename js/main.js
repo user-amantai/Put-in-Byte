@@ -58,16 +58,14 @@
 		Hero Slider
 	--------------------*/
     $('.hero__slider').owlCarousel({
-        loop: true,
-        dots: true,
-        mouseDrag: false,
+        loop: false,
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
         items: 1,
         margin: 0,
-        smartSpeed: 1200,
+        // smartSpeed: 1200,
         autoHeight: false,
-        autoplay: true,
+        autoplay: false,
     });
 
     // var dot = $('.hero__slider .owl-dot');
@@ -134,7 +132,7 @@
         Logo Slider
     --------------------*/
     $(".logo__carousel").owlCarousel({
-        loop: true,
+        loop: false,
         margin: 100,
         items: 6,
         dots: false,
@@ -158,13 +156,6 @@
     });
 
     /*------------------
-        Video Popup
-    --------------------*/
-    $('.video-popup').magnificPopup({
-        type: 'iframe'
-    });
-
-    /*------------------
         Counter
     --------------------*/
     $('.counter_num').each(function () {
@@ -180,23 +171,18 @@
     });
 
 })(jQuery);
-
-// anchors
-
-const anchors = document.querySelectorAll('a[href*="#"]')
-
-for(let anchor of anchors){
-    anchor.addEventListener('click', function(event) {
-        event.preventDefault()
-        const blockID = anchor.getAttribute('href')
-        document.querySelector('' + blockID).scrollIntoView({
-            behavior: "smooth",
-            block: 'start'
-        })
-    })
-}
 $(function() {
     $('.slicknav_icon').click(function(){
         $(this).toggleClass('open');
     });
 });
+
+// прилипает панель
+window.onscroll = function showHeader(){
+    var header = document.querySelector('.header')
+    if(window.scrollY > 200){
+        header.classList.add('header__fixed')
+    }else{
+        header.classList.remove('header__fixed')
+    }
+}
